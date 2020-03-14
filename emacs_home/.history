@@ -1,0 +1,13 @@
+ls
+cd /
+ls
+exit
+ssh root@192.168.1.139
+ssh root@192.168.1.139
+Pseudo-terminal will not be allocated because stdin is not a terminal.
+CreateProcessW failed error:2
+ssh_askpass: posix_spawn: No such file or directory
+Host key verification failed.
+
+d:\zpbird\note\linux\centos>
+exit

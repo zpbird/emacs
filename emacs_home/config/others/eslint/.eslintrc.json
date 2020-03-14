@@ -1,0 +1,27 @@
+{
+    "extends": "airbnb",
+	  // "installedESLint": true,
+    "plugins": [
+        // "react",
+		    "html"
+    ],
+    "env": {
+        "jquery": true,
+        "browser": true
+    },
+    "rules": {
+		    // "indent": ["error", "tab"],
+        // "indent": [2, 4],
+		    "indent": ["error", 2],
+		    "no-alert": 0,
+		    "no-console": 0,
+		    "no-tabs": 0,
+		    "no-mixed-spaces-and-tabs": 0,
+		    "func-names": ["error", "never"],
+        "no-unused-vars": 0
+    },
+	  "settings":{
+		    "html/xml-extensions": [".vue", ".html"],
+		    "html/javascript-mime-types": ["text/javascript", "text/jsx","text/ecmasscript-6"]
+	  }
+}
