@@ -1,10 +1,5 @@
 ;;; -*- coding: utf-8 -*-
-(("/store/zpbird/note/linux/docker/docker.org" . 19738)
- ("/store/zpbird/software/emacs/emacs_home/.emacs.d/recentf" . 784)
- ("/store/zpbird/note/git/git.org" . 2567)
- ("/store/zpbird/dockerfiles/datebase/redis/conf/redis.conf" . 45)
- ("/store/zpbird/dockerfiles/webserver/nginx/Dockerfile" . 756)
- ("/ssh:zp@192.168.56.11:/store/zpbird/docker_app_files/nginx/html/index.html" . 619)
+(("/ssh:zp@192.168.56.11:/store/zpbird/docker_app_files/nginx/html/index.html" . 619)
  ("/ssh:zp@192.168.56.11:/store/"
   (dired-filename . "/ssh:zp@192.168.56.11:/store/zpbird"))
  ("/ssh:zp@192.168.56.11:/store/zpbird/"

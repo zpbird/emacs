@@ -286,6 +286,12 @@
 (use-package docker-compose-mode)
 
 
+;; magit
+;; ----------------------------------------------
+(use-package magit
+  :ensure t
+  :bind ("C-x C-g" . magit-status)
+  :config (setq magit-save-repository-buffers 'dontask))
 
 
 
