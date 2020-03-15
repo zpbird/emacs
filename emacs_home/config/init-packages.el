@@ -55,6 +55,7 @@
             goto-last-change
             sudo-edit
             super-save
+            magit
             ;;--------------------
             ;; --- Major Mode ---
             ;;--------------------
