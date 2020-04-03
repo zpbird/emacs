@@ -62,3 +62,4 @@ lspci -k | grep VGA
 dmesg | grep VGA
 exit
 cd /
+docker exec -it post /bin/bash

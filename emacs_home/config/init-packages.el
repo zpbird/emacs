@@ -66,6 +66,10 @@
             dockerfile-mode
             yaml-mode
             docker-compose-mode
+            go-mode
+            company-lsp
+            company-go
+            
             ;;--------------------
             ;; --- Minor Mode ---
             ;;--------------------
@@ -76,6 +80,9 @@
             js2-refactor
             markdown-mode
             tide
+            lsp-mode
+            lsp-ui
+            
             ;;--------------------
             ;; --- UI ---
             ;;--------------------

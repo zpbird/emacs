@@ -6,6 +6,8 @@
 ;; company
 ;;----------------------------------------------------------------------------
 (use-package company
+  :ensure t
+  ;; :hook (after-init . global-company-mode)
   :defer t
   :init
   (progn
@@ -108,6 +110,39 @@
                              ))
                           ))))
 
+;; python
+(dolist (hook '(
+                python-mode-hook
+                ))
+  (add-hook hook
+            (lambda ()
+              (setq-local company-backends
+                          '((
+                             company-files
+                             company-keywords
+                             company-capf
+                             company-yasnippet
+                             company-dabbrev
+                             ))
+                          ))))
+
+
+;; go-mode
+;; -------------------------------------------------------
+(dolist (hook '(
+                go-mode-hook
+                ))
+  (add-hook hook
+            (lambda ()
+              (setq-local company-backends
+                          '((
+                             company-files
+                             company-keywords
+                             company-capf
+                             company-yasnippet
+                             company-dabbrev
+                             ))
+                          ))))
 
 
 ;;company-statistics排序
@@ -144,9 +179,13 @@
 ;; yasnippet
 ;;-----------------------------------------------------------------
 (use-package yasnippet
+  :ensure t
+  :commands yas-minor-mode
+  :hook (go-mode . yas-minor-mode)
   :defer t
   :init
   (progn
+    (global-set-key (kbd "C-c C-y") 'company-yasnippet)
     ;; (yas-global-mode 1) ;;全局使用
     ;; (add-hook 'prog-mode-hook #'yas-minor-mode) ;;指定局部使用的mode
     (setq yas-snippet-dirs
@@ -163,17 +202,19 @@
                     js3-mode-hook
                     web-mode-hook
                     typescript-mode-hook
+                    ;; go-mode-hook
                     ))
       (add-hook hook
                 (lambda ()
                   (yas-minor-mode t)
                   (yas--load-snippet-dirs) ;; 加载snippet目录
                   'yas-minor-mode-hook
-                  )))    
+                  )))
+    
 ;; test end------------------------------------------
 
 
-    ;; (yas--load-snippet-dirs) ;; 加载snippet目录
+
     ))
 
 

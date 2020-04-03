@@ -20,7 +20,7 @@
 ;; 设置字体
 (if (display-graphic-p)
     ;;设置图形界面下字体
-    (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "11")
+    (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "10")
     ;; (zp-set-fonts "明黑等宽" "Source Code Pro" "DejaVu Sans Mono" "12")
     ;; (zp-set-fonts "M+ 1m" "Source Code Pro" "DejaVu Sans Mono" "10")
     ;; (zp-set-fonts "Ubuntu Mono" "Source Code Pro" "DejaVu Sans Mono" "11")

@@ -53,6 +53,8 @@
 ;;    15. custom.el               # 存放使用编辑器接口产生的配置信息
 (setq custom-file (expand-file-name "~/config/custom.el" user-emacs-directory))
 (load-file custom-file)
+;;    16. init-lsp.el
+(require 'init-lsp)
 ;;==============================================================================
 
 

@@ -273,8 +273,23 @@
   )
 
 
-
-
+;; 一键执行代码
+;;-------------------------------------------
+;; (use-package maple-run
+;;   :quelpa (:fetcher github :repo "honmaple/emacs-maple-run")
+;;   :commands (maple-run)
+;;   :config
+;;   (add-to-list 'maple-run:alist '(python-mode :command "python %F"))
+;;   (add-to-list 'maple-run:alist '((html-mode web-mode) :command browse-url-of-file))
+;;   (maple-run:script nil "go" "run" (buffer-file-name))
+  
+;;   ;; The time of process timeout, 0 means never timeout
+;;   (setq maple-run:timeout 20)
+;;   ;; auto focus process buffer
+;;   (setq maple-run:focus t)
+;;   ;; Whether clear process buffer when execute command every time
+;;   (setq maple-run:auto-clear nil)
+;;   )
 
 
 ;;=== End =====
