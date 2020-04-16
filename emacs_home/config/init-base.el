@@ -108,14 +108,13 @@
 ;;---------------------------------------------------------------------------
 (use-package dumb-jump
   :defer t
-;; Archlinux安装rg $ pacman -S ripgrep  
-;;  :bind (
-         ;; ("M-g o" . dumb-jump-go-other-window)
-         ;; ("M-g j" . dumb-jump-go)
-         ;; ("M-g i" . dumb-jump-go-prompt)
-         ;; ("M-g x" . dumb-jump-go-prefer-external)
-         ;; ("M-g z" . dumb-jump-go-prefer-external-other-window)
-  ;;         )
+  :bind (
+         ("M-g o" . dumb-jump-go-other-window)
+         ("M-g j" . dumb-jump-go)
+         ("M-g i" . dumb-jump-go-prompt)
+         ("M-g x" . dumb-jump-go-prefer-external)
+         ("M-g z" . dumb-jump-go-prefer-external-other-window)
+         )
 
   :init
   ;; 只读打开dumb-jump文件
@@ -150,7 +149,7 @@
   :ensure nil
   :defer t
   :init
-  (setq recentf-max-saved-items 10)
+  (setq recentf-max-saved-items 30)
   ;; lazy load recentf
   ;; (add-hook 'after-init-hook 'recentf-mode)
   (add-hook 'find-file-hook (lambda () (unless recentf-mode
@@ -290,6 +289,10 @@
 ;;   ;; Whether clear process buffer when execute command every time
 ;;   (setq maple-run:auto-clear nil)
 ;;   )
+
+
+
+
 
 
 ;;=== End =====

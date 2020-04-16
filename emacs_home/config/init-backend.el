@@ -17,6 +17,7 @@
     (add-hook 'go-mode-hook
               (lambda ()
                 (setq tab-width 4)))
+    ;; (add-hook 'go-mode-hook #'gorepl-mode)
     ))
 
 ;; company-go
@@ -26,6 +27,11 @@
   (setq company-begin-commands '(self-insert-command))
   
     )
+
+
+
+
+
 
 
 

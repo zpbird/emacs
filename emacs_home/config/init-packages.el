@@ -67,9 +67,10 @@
             yaml-mode
             docker-compose-mode
             go-mode
+            gorepl-mode
             company-lsp
             company-go
-            
+            svelte-mode
             ;;--------------------
             ;; --- Minor Mode ---
             ;;--------------------

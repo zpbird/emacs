@@ -42,7 +42,8 @@
 
 ;; 只读切换
 ;;---------------------------------------------
-(global-set-key (kbd "C-c o") 'read-only-mode)
+;; (global-set-key (kbd "C-c o") 'read-only-mode)
+(global-set-key (kbd "C-z") 'read-only-mode)
 
 ;; 定时只读所有buffer
 ;;------------------------------------------------------------------------

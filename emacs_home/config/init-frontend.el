@@ -136,6 +136,14 @@
 
 
 
+;; svelte-mode
+;;----------------------------------------
+(use-package svelte-mode
+  :defer t
+  :mode "\\.svelte"
+  )
+
+
 ;; (defun setup-tide-mode ()
 ;;   (interactive)
 ;;   (tide-setup)

@@ -15,6 +15,7 @@
   (message "all buffers are read only")
   )
 
+
 ;; 关闭所有buffer
 ;;-------------------------------------
 (defun zp-close-all-buffers ()

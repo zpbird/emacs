@@ -33,7 +33,7 @@
          company-files
          company-keywords
          company-capf
-         company-dabbrev
+         ;; company-dabbrev
          )))
 ;; javascript后端
 (dolist (hook '(
@@ -51,7 +51,7 @@
                              company-capf
                              company-yasnippet
                              company-tern
-                             company-dabbrev
+                             ;; company-dabbrev
                              ))
                           ))))
 
@@ -86,7 +86,7 @@
                              company-capf
                              company-yasnippet
                              company-css
-                             company-dabbrev
+                             ;; company-dabbrev
                              ))
                           ))))
 ;; web-mode后端
@@ -106,9 +106,32 @@
                              company-tern
                              company-tide
                              company-yasnippet
-                             company-dabbrev
+                             ;; company-dabbrev
                              ))
                           ))))
+
+;; svelte-mod
+(dolist (hook '(
+                svelte-mode-hook
+                ))
+  (add-hook hook
+            (lambda ()
+              (tern-mode t)
+              (setq-local company-backends
+                          '((
+                             company-files
+                             company-keywords
+                             company-capf
+                             company-web-html
+                             company-css
+                             company-tern
+                             company-tide
+                             company-yasnippet
+                             ;; company-dabbrev
+                             ))
+                          ))))
+
+
 
 ;; python
 (dolist (hook '(
@@ -122,7 +145,7 @@
                              company-keywords
                              company-capf
                              company-yasnippet
-                             company-dabbrev
+                             ;; company-dabbrev
                              ))
                           ))))
 
@@ -140,7 +163,7 @@
                              company-keywords
                              company-capf
                              company-yasnippet
-                             company-dabbrev
+                             ;; company-dabbrev
                              ))
                           ))))
 
@@ -194,6 +217,11 @@
             ;; yas-installed-snippets-dir
             ))
 
+
+
+
+
+    
 ;; test----------------------------------------------
     (dolist (hook '(
                     css-mode-hook
@@ -202,7 +230,7 @@
                     js3-mode-hook
                     web-mode-hook
                     typescript-mode-hook
-                    ;; go-mode-hook
+                    svelte-mode-hook
                     ))
       (add-hook hook
                 (lambda ()
