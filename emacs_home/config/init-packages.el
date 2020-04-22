@@ -71,6 +71,9 @@
             company-lsp
             company-go
             svelte-mode
+            posframe
+            jsonrpc
+            ;; eglot
             ;;--------------------
             ;; --- Minor Mode ---
             ;;--------------------

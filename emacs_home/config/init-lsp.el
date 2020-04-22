@@ -17,16 +17,50 @@
 ;;   )
 
 
+
+
+;; lsp-mode GOOD
+;;----------------------------------------------------------------------------
+
+;; (use-package lsp-mode
+;;   :ensure t
+;;   :commands (lsp)
+;;   :hook (go-mode . lsp)
+;;   :config
+;;   (lsp-register-custom-settings
+;;    '(("gopls.completeUnimported" t t)
+;;      ("gopls.staticcheck" t t)))
+;;   (setq lsp-prefer-flymake nil)
+;;   ;; (setq lsp-enable-symbol-highlighting nil)
+;;   )
+
+
+;; lsp-mode 3
+;;----------------------------------------------------------------------------
 (use-package lsp-mode
-  :ensure t
-  :commands (lsp)
+  :commands lsp
   :hook (go-mode . lsp)
   :config
-  (lsp-register-custom-settings
-   '(("gopls.completeUnimported" t t)
-     ("gopls.staticcheck" t t)))
   (setq lsp-prefer-flymake nil)
+  (setq lsp-signature-auto-activate nil)
+
+  ;; (setq gc-cons-threshold 100000000)
+  ;; (setq read-process-output-max (* 1024 1024)) ;; 1mb
+  ;; (setq lsp-prefer-capf t)
+  ;; (setq lsp-idle-delay 0.500)
+  ;; (setq lsp-print-performance t)
+  
+
+  ;; (lsp-register-custom-settings
+  ;;  '(("gopls.completeUnimported" t t)
+  ;;    ("gopls.staticcheck" t t)))
+  ;; (setq lsp-enable-symbol-highlighting nil)
   )
+
+
+
+
+
 
 
 
@@ -42,7 +76,6 @@
 
 ;; Optional - provides fancier overlays.
 (use-package lsp-ui
-  :ensure t
   :commands lsp-ui-mode)
 
 ;; company-lsp integrates company mode completion with lsp-mode.
@@ -50,6 +83,8 @@
 (use-package company-lsp
   :ensure t
   :commands company-lsp)
+
+
 
 
 

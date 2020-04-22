@@ -33,7 +33,7 @@
          company-files
          company-keywords
          company-capf
-         ;; company-dabbrev
+         company-dabbrev
          )))
 ;; javascript后端
 (dolist (hook '(

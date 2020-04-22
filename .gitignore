@@ -5,6 +5,7 @@ emacs_home/.ipython
 emacs_home/.mozilla
 emacs_home/.npm
 emacs_home/.pylint.d
+emacs_home/.TabNine
 emacs_home/vimish-fold
 emacs_home/places
 
