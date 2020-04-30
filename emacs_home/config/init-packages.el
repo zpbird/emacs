@@ -70,9 +70,9 @@
             gorepl-mode
             company-lsp
             company-go
-            svelte-mode
-            posframe
-            jsonrpc
+            ;; svelte-mode
+            ;; posframe
+            ;; jsonrpc
             ;; eglot
             ;;--------------------
             ;; --- Minor Mode ---

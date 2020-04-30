@@ -44,6 +44,9 @@
   (setq lsp-prefer-flymake nil)
   (setq lsp-signature-auto-activate nil)
 
+  (setq lsp-flycheck-live-reporting nil)
+  ;; (setq flycheck-check-syntax-automatically '(save mode-enabled)) ;;打开和保存时进行检查
+
   ;; (setq gc-cons-threshold 100000000)
   ;; (setq read-process-output-max (* 1024 1024)) ;; 1mb
   ;; (setq lsp-prefer-capf t)
