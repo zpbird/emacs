@@ -31,7 +31,7 @@
 
       (progn
         ;; (message "I am linux")
-        (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "16")
+        (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "12")
         )
 
       )

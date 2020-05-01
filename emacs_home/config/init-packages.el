@@ -31,7 +31,7 @@
             counsel
             company
             company-statistics
-            company-tern
+           ;; company-tern
             company-jedi
             yasnippet
             yasnippet-snippets

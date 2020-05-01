@@ -134,58 +134,15 @@
 
 
 
+;; node_path
+;; -------------
 
-
-;; svelte-mode
-;;----------------------------------------
-(use-package svelte-mode
-  :defer t
-  :mode "\\.svelte"
-  )
-
-
-;; (defun setup-tide-mode ()
-;;   (interactive)
-;;   (tide-setup)
-;;   (flycheck-mode +1)
-;;   (setq flycheck-check-syntax-automatically '(save mode-enabled))
-;;   (eldoc-mode +1)
-;;   (tide-hl-identifier-mode +1)
-;;   ;; company is an optional dependency. You have to
-;;   ;; install it separately via package-install
-;;   ;; `M-x package-install [ret] company`
-;;   (company-mode +1))
-
-;; ;; aligns annotation to the right hand side
-;; (setq company-tooltip-align-annotations t)
-
-;; ;; formats the buffer before saving
-;; (add-hook 'before-save-hook 'tide-format-before-save)
-
-;; (add-hook 'typescript-mode-hook #'setup-tide-mode)
+;; (setenv "PATH" (concat "/home/zp/.nvm/versions/node/v12.16.0/bin/:" (getenv "PATH")))
+;; (setq exec-path (append exec-path '("/home/zp/.nvm/versions/node/v12.16.0/bin/")))
 
 
 
 
-
-
-;; (require 'tide)
-
-;; (dolist (hook (list
-;;                'js2-mode-hook
-;;                'rjsx-mode-hook
-;;                'typescript-mode-hook
-;;                ))
-;;   (add-hook hook (lambda ()
-;;                    ;; 初始化 tide
-;;                    (tide-setup)
-;;                    ;; 当 tsserver 服务没有启动时自动重新启动
-;;                    (unless (tide-current-server)
-;;                      (tide-restart-server))
-;;                    )))
-
-;; tide_end
-;;-------------------------------------------------------------------
 
 
 

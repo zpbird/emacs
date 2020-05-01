@@ -50,7 +50,7 @@
                              company-keywords
                              company-capf
                              company-yasnippet
-                             company-tern
+                             ;;company-tern
                              ;; company-dabbrev
                              ))
                           ))))
@@ -103,33 +103,14 @@
                              company-capf
                              company-web-html
                              company-css
-                             company-tern
+                             ;;company-tern
                              company-tide
                              company-yasnippet
                              ;; company-dabbrev
                              ))
                           ))))
 
-;; svelte-mod
-(dolist (hook '(
-                svelte-mode-hook
-                ))
-  (add-hook hook
-            (lambda ()
-              (tern-mode t)
-              (setq-local company-backends
-                          '((
-                             company-files
-                             company-keywords
-                             company-capf
-                             company-web-html
-                             company-css
-                             company-tern
-                             company-tide
-                             company-yasnippet
-                             ;; company-dabbrev
-                             ))
-                          ))))
+
 
 
 
@@ -180,10 +161,10 @@
 
 ;; company-tern 
 ;;--------------------------------------------------------
-(use-package company-tern 
-  :defer t
-  :init
-  )
+;;(use-package company-tern 
+;;  :defer t
+;;  :init
+;;  )
 
 ;; company-web
 ;;----------------------------

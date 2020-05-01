@@ -37,7 +37,9 @@
 
 ;; lsp-mode 3
 ;;----------------------------------------------------------------------------
+
 (use-package lsp-mode
+  :ensure t
   :commands lsp
   :hook (go-mode . lsp)
   :config
@@ -45,6 +47,13 @@
   (setq lsp-signature-auto-activate nil)
 
   (setq lsp-flycheck-live-reporting nil)
+
+  (lsp-register-custom-settings
+   '(("gopls.completeUnimported" t t)
+     ("gopls.staticcheck" t t)))
+
+
+  ;;-------------------------------------------------------------------------------------
   ;; (setq flycheck-check-syntax-automatically '(save mode-enabled)) ;;打开和保存时进行检查
 
   ;; (setq gc-cons-threshold 100000000)
@@ -58,7 +67,10 @@
   ;;  '(("gopls.completeUnimported" t t)
   ;;    ("gopls.staticcheck" t t)))
   ;; (setq lsp-enable-symbol-highlighting nil)
-  )
+  ;;-------------------------------------------------------------------------------------
+
+  
+)
 
 
 
