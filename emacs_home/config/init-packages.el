@@ -41,7 +41,8 @@
             ;; --- Better Editor ---
             ;;-----------------------
             dumb-jump
-            multiple-cursors
+            ;; multiple-cursors
+            iedit 
             smartparens
             expand-region
             smart-hungry-delete
@@ -91,7 +92,7 @@
             ;; --- UI ---
             ;;--------------------
             rainbow-mode
-            ;; window-numbering
+            window-numbering
             rainbow-delimiters
             centaur-tabs
             ;;----------------

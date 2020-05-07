@@ -49,11 +49,11 @@
 
 ;;window-numbering 窗口编号
 ;;---------------------------
-;; (use-package window-numbering
-;;   :defer t
-;;   :init
-;;   (window-numbering-mode 1)
-;;   )
+(use-package window-numbering
+  :defer t
+  :init
+  (window-numbering-mode 1)
+  )
 
 ;;rainbow-mode 颜色预览
 ;;------------------------------------------------
