@@ -51,6 +51,9 @@
   (lsp-register-custom-settings
    '(("gopls.completeUnimported" t t)
      ("gopls.staticcheck" t t)))
+)
+
+
 
 
   ;;-------------------------------------------------------------------------------------
@@ -70,7 +73,6 @@
   ;;-------------------------------------------------------------------------------------
 
   
-)
 
 
 
@@ -97,7 +99,8 @@
 ;; completion-at-point also works out of the box but doesn't support snippets.
 (use-package company-lsp
   :ensure t
-  :commands company-lsp)
+  :commands company-lsp
+  )
 
 
 

@@ -141,24 +141,18 @@
 
 ;; Multiple cursors
 ;;-------------------------------------------------------------------
-;; (use-package multiple-cursors
-;;   :defer t
-;;   :bind (("C-S-c C-S-c" . mc/edit-lines)
-;;          ("C->" . mc/mark-next-like-this)
-;;          ("C-<". mc/mark-previous-like-this)
-;;          ("C-c C-<". mc/mark-all-like-this)
-;;          ("s-<mouse-1>" . mc/add-cursor-on-click)
-;;          ("C-S-<mouse-1>" . mc/add-cursor-on-click))
-;;   )
-
-
-;; iedit
-;;-------------------------------------------------------------------
-(use-package iedit
-  ;; :defer t
-  :config
-  (add-hook 'prog-mode-hook 'iedit-mode-hook)
+(use-package multiple-cursors
+  :defer t
+  :bind (("C-S-c C-S-c" . mc/edit-lines)
+         ("C->" . mc/mark-next-like-this)
+         ("C-<". mc/mark-previous-like-this)
+         ("C-c C-<". mc/mark-all-like-this)
+         ("s-<mouse-1>" . mc/add-cursor-on-click)
+         ("C-S-<mouse-1>" . mc/add-cursor-on-click))
   )
+
+
+
 
 
 ;; 新建窗口并激活

@@ -8,8 +8,17 @@
 (when (>= emacs-major-version 24)
      (require 'package)
      (package-initialize)
+
      (setq package-archives '(("gnu"   . "http://elpa.emacs-china.org/gnu/")
-          ("melpa" . "http://elpa.emacs-china.org/melpa/"))))
+                              ("melpa" . "http://elpa.emacs-china.org/melpa/")
+                              ))
+
+     ;; (setq package-archives '(("gnu"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+     ;;                          ("melpa-stable" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa-stable/")
+     ;;                          ("melpa" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+     ;;                          ))
+
+     )
 ;; 注意 elpa.emacs-china.org 是 Emacs China 中文社区在国内搭建的一个 ELPA 镜像
 ;; cl - Common Lisp Extension
  (require 'cl)
@@ -41,8 +50,8 @@
             ;; --- Better Editor ---
             ;;-----------------------
             dumb-jump
-            ;; multiple-cursors
-            iedit 
+            multiple-cursors
+
             smartparens
             expand-region
             smart-hungry-delete

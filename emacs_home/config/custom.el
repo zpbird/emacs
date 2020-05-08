@@ -11,7 +11,7 @@
  '(display-time-mode t)
  '(package-selected-packages
    (quote
-    (use-package smex swiper counsel company company-statistics company-tern yasnippet multiple-cursors smartparens expand-region smart-hungry-delete drag-stuff vimish-fold beacon org-mind-map mwim syntax-subword symbol-overlay goto-last-change sudo-edit web-mode js2-mode json-mode emmet-mode flycheck company-web css-eldoc js2-refactor rainbow-mode window-numbering rainbow-delimiters spacemacs-theme)))
+    (lsp-mode use-package smex swiper counsel company company-statistics company-tern yasnippet multiple-cursors smartparens expand-region smart-hungry-delete drag-stuff vimish-fold beacon org-mind-map mwim syntax-subword symbol-overlay goto-last-change sudo-edit web-mode js2-mode json-mode emmet-mode flycheck company-web css-eldoc js2-refactor rainbow-mode window-numbering rainbow-delimiters spacemacs-theme)))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 
