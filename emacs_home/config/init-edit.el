@@ -139,17 +139,7 @@
   (add-to-list 'drag-stuff-except-modes 'org-mode)
   (drag-stuff-define-keys))
 
-;; Multiple cursors
-;;-------------------------------------------------------------------
-(use-package multiple-cursors
-  :defer t
-  :bind (("C-S-c C-S-c" . mc/edit-lines)
-         ("C->" . mc/mark-next-like-this)
-         ("C-<". mc/mark-previous-like-this)
-         ("C-c C-<". mc/mark-all-like-this)
-         ("s-<mouse-1>" . mc/add-cursor-on-click)
-         ("C-S-<mouse-1>" . mc/add-cursor-on-click))
-  )
+
 
 
 

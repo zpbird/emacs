@@ -50,8 +50,6 @@
             ;; --- Better Editor ---
             ;;-----------------------
             dumb-jump
-            multiple-cursors
-
             smartparens
             expand-region
             smart-hungry-delete
