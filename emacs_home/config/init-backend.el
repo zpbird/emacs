@@ -29,32 +29,7 @@
     )
 
 
-;; nox
-;;-------------------------------------
 
-;; (add-to-list 'load-path "~/config/manual/nox/")
-;; (require 'nox)
-;; (dolist (hook (list
-;;                ;; 'js-mode-hook
-;;                ;; 'rust-mode-hook
-;;                ;; 'python-mode-hook
-;;                ;; 'ruby-mode-hook
-;;                ;; 'java-mode-hook
-;;                ;; 'sh-mode-hook
-;;                ;; 'php-mode-hook
-;;                ;; 'c-mode-common-hook
-;;                ;; 'c-mode-hook
-;;                ;; 'c++-mode-hook
-;;                'go-mode-hook
-;;                ))
-;;   (add-hook hook '(lambda () (nox-ensure))))
-;; (require 'posframe)
-
-
-
-;; eglot
-;;-------------------------------------
-;; (add-hook 'go-mode-hook 'eglot-ensure)
 
 
 
