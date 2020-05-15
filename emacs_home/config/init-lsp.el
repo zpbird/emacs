@@ -51,6 +51,14 @@
   (lsp-register-custom-settings
    '(("gopls.completeUnimported" t t)
      ("gopls.staticcheck" t t)))
+
+
+  (setq gc-cons-threshold 100000000)
+  (setq read-process-output-max (* 1024 1024)) ;; 1mb
+  (setq lsp-prefer-capf t)
+  (setq lsp-idle-delay 0.500)
+  (setq lsp-print-performance t)
+  (setq lsp-enable-symbol-highlighting nil)
 )
 
 
@@ -59,17 +67,7 @@
   ;;-------------------------------------------------------------------------------------
   ;; (setq flycheck-check-syntax-automatically '(save mode-enabled)) ;;打开和保存时进行检查
 
-  ;; (setq gc-cons-threshold 100000000)
-  ;; (setq read-process-output-max (* 1024 1024)) ;; 1mb
-  ;; (setq lsp-prefer-capf t)
-  ;; (setq lsp-idle-delay 0.500)
-  ;; (setq lsp-print-performance t)
-  
 
-  ;; (lsp-register-custom-settings
-  ;;  '(("gopls.completeUnimported" t t)
-  ;;    ("gopls.staticcheck" t t)))
-  ;; (setq lsp-enable-symbol-highlighting nil)
   ;;-------------------------------------------------------------------------------------
 
   
@@ -93,7 +91,17 @@
 
 ;; Optional - provides fancier overlays.
 (use-package lsp-ui
-  :commands lsp-ui-mode)
+  :commands lsp-ui-mode
+  :bind (("C-c C-l" . lsp-ui-doc-glance))
+  :config
+  ;; (setq lsp-ui-peek-enable t)
+  (setq lsp-ui-doc-enable nil)
+  ;; (setq lsp-ui-imenu-enable t)
+  ;; (setq lsp-ui-flycheck-enable t)
+  ;; (setq lsp-ui-doc-position (quote top))
+  (setq lsp-ui-sideline-enable nil)
+  (setq lsp-ui-sideline-ignore-duplicate t)
+  )
 
 ;; company-lsp integrates company mode completion with lsp-mode.
 ;; completion-at-point also works out of the box but doesn't support snippets.
