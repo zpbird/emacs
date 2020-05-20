@@ -15,6 +15,9 @@
   (org-defkey org-mode-map (kbd "C-e") nil)
   (org-defkey org-mode-map (kbd "C-c C-k") nil)
   (org-defkey org-mode-map (kbd "C-c C-r") nil)
+  (org-defkey org-mode-map (kbd "C-<tab>") nil)
+  (org-defkey org-mode-map (kbd "S-<tab>") nil)
+  (org-defkey org-mode-map (kbd "<backtab>") nil)
   )
 
 

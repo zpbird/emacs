@@ -35,7 +35,7 @@
     (setq save-place t)
     )
   :config
-  (setq save-place-file "~/places")
+  (setq save-place-file "~/places.pl")
   )
 
 ;;smex 命令提示

@@ -140,7 +140,8 @@
 
 ;;启动时全屏
 ;;---------------------------------------------
-(toggle-frame-maximized)
+;; (toggle-frame-maximized)
+(toggle-frame-fullscreen)
 (global-set-key [f12] 'toggle-frame-fullscreen)
 
 ;; 设置mode-line中显示日期时间
