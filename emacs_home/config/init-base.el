@@ -260,16 +260,15 @@
 
 ;; 自动保存文件
 ;;-------------------------------------------
-(use-package super-save
-  :ensure t
-  :config
-  (super-save-mode +1)
-  (setq super-save-auto-save-when-idle t)
-  ;; save on find-file
-  (add-to-list 'super-save-hook-triggers 'find-file-hook)
-  ;; save on recentf
-  ;; (add-to-list 'super-save-triggers 'ivy)
-  )
+
+;; (use-package super-save
+;;   :ensure t
+;;   :config
+;;   (super-save-mode +1)
+;;   (setq super-save-auto-save-when-idle t)
+;;   (add-to-list 'super-save-hook-triggers 'find-file-hook)
+;;   )
+
 
 
 ;; 保存退出状态
@@ -278,6 +277,9 @@
 (column-number-mode t)
 (display-time-mode t)
 
+
+;; 退出emacs时确认
+(setq confirm-kill-emacs 'y-or-n-p)
 
 ;; 获取linux环境变量
 

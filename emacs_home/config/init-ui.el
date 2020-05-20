@@ -202,8 +202,11 @@
   
   ;; (setq centaur-tabs--buffer-show-groups t)
   :bind
-  ("C-<prior>" . centaur-tabs-backward)
-  ("C-<next>" . centaur-tabs-forward))
+  ;; ("C-<prior>" . centaur-tabs-backward)
+  ;; ("C-<next>" . centaur-tabs-forward)
+  ("<backtab>" . centaur-tabs-backward)
+  ("C-<tab>" . centaur-tabs-forward)
+  )
 
 
 
