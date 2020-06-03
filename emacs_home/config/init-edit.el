@@ -196,21 +196,6 @@
 	(message "Indent buffer.")))))
 (global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 
-;; Vimish Fold 类似vim折叠
-;;---------------------------------------------------------
-;; (use-package vimish-fold
-;;   :defer t
-;;   :init
-;;   (progn
-;;     (vimish-fold-global-mode 1)
-;;     (setq vimish-fold-dir "~/vimish-fold")
-;;     (define-key vimish-fold-unfolded-keymap (kbd "C-`") nil)
-;;     (global-set-key (kbd "C-c f") #'vimish-fold)
-;;     (global-set-key (kbd "C-c d") #'vimish-fold-delete)
-;;     (global-set-key (kbd "C-c t") #'vimish-fold-toggle)
-;;     (global-set-key (kbd "C-c y") #'vimish-fold-toggle-all)
-;;     )
-;;   )
 
 
 ;; goto-last-change
@@ -289,7 +274,11 @@
   :config (setq magit-save-repository-buffers 'dontask))
 
 
-
+;; iedit
+;; ----------------------------------------------
+(use-package iedit
+  
+  )
 
 
 

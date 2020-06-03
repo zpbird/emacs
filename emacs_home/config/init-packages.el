@@ -40,7 +40,6 @@
             counsel
             company
             company-statistics
-           ;; company-tern
             company-jedi
             yasnippet
             yasnippet-snippets
@@ -54,9 +53,7 @@
             expand-region
             smart-hungry-delete
             drag-stuff
-            vimish-fold
             beacon
-;;            org-mind-map
             mwim
             syntax-subword
             symbol-overlay
@@ -78,10 +75,6 @@
             gorepl-mode
             company-lsp
             company-go
-            ;; svelte-mode
-            ;; posframe
-            ;; jsonrpc
-            ;; eglot
             ;;--------------------
             ;; --- Minor Mode ---
             ;;--------------------
@@ -94,7 +87,9 @@
             tide
             lsp-mode
             lsp-ui
+            iedit
             
+            ;; multiple-cursors
             ;;--------------------
             ;; --- UI ---
             ;;--------------------

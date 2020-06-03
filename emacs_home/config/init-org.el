@@ -55,11 +55,7 @@
 (setq-default org-startup-indented t)
 
 
-;;org导视图
-;;-----------------------
-(use-package org-mind-map
-  :defer t
-  )
+
 
 
 
