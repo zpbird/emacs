@@ -67,10 +67,10 @@
                              company-files
                              company-keywords
                              company-capf
+                             company-dabbrev-code
                              company-yasnippet
                              ;; company-tern
                              company-tide
-                             company-dabbrev
                              ))
                           ))))
 
@@ -103,10 +103,10 @@
                              company-capf
                              company-web-html
                              company-css
-                             ;;company-tern
-                             company-tide
                              company-yasnippet
+                             company-tide
                              ;; company-dabbrev
+                             ;; company-tern
                              ))
                           ))))
 
@@ -211,7 +211,6 @@
                     js3-mode-hook
                     web-mode-hook
                     typescript-mode-hook
-                    svelte-mode-hook
                     ))
       (add-hook hook
                 (lambda ()

@@ -61,6 +61,7 @@
             sudo-edit
             super-save
             magit
+
             ;;--------------------
             ;; --- Major Mode ---
             ;;--------------------
@@ -88,6 +89,7 @@
             lsp-mode
             lsp-ui
             iedit
+            
             
             ;; multiple-cursors
             ;;--------------------

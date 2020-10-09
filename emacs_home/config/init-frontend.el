@@ -24,8 +24,8 @@
   (setq web-mode-markup-indent-offset 2)
   (setq web-mode-css-indent-offset 2)
   (setq web-mode-code-indent-offset 2)
-  (setq web-mode-style-padding 4)
-  (setq web-mode-script-padding 4)
+  (setq web-mode-style-padding 2)
+  (setq web-mode-script-padding 2)
   ;; (setq web-mode-enable-css-colorization nil)
   ;; (setq web-mode-enable-css-colorization t)
   (setq web-mode-enable-current-element-highlight 1)
@@ -33,10 +33,21 @@
   (setq web-mode-enable-current-element-highlight t)
   (setq web-mode-enable-current-column-highlight t)
 
-  (add-hook 'web-mode-hook
-            (lambda ()
-              (tide-setup)
-              ))
+
+
+  ;; (add-hook 'web-mode-hook
+  ;;           (lambda ()
+  ;;             (tide-setup)
+  ;;             ))
+
+  ;; (add-hook 'web-mode-hook
+  ;;         (lambda ()
+  ;;           (when (string-equal "vue" (file-name-extension buffer-file-name))
+  ;;             (setup-tide-mode)
+  ;;             )))
+  
+  (flycheck-add-mode 'typescript-tslint 'web-mode)  
+  
 
   )
 
@@ -122,9 +133,13 @@
 
 (use-package tide
   :ensure t
-  :after (typescript-mode company flycheck)
+  :after (web-mode typescript-mode company flycheck)
   :hook ((typescript-mode . tide-setup)
          (typescript-mode . tide-hl-identifier-mode)
+
+         (web-mode . tide-setup)
+         (web-mode . tide-hl-identifier-mode)
+
          ;; (before-save . tide-format-before-save)
          )
   :config

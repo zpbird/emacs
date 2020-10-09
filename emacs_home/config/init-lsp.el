@@ -41,7 +41,7 @@
 (use-package lsp-mode
   :ensure t
   :commands lsp
-  :hook (go-mode . lsp)
+  :hook ((go-mode) . lsp)
   :config
   (setq lsp-prefer-flymake nil)
   (setq lsp-signature-auto-activate nil)
@@ -60,19 +60,6 @@
   (setq lsp-print-performance t)
   (setq lsp-enable-symbol-highlighting nil)
 )
-
-
-
-
-  ;;-------------------------------------------------------------------------------------
-  ;; (setq flycheck-check-syntax-automatically '(save mode-enabled)) ;;打开和保存时进行检查
-
-
-  ;;-------------------------------------------------------------------------------------
-
-  
-
-
 
 
 

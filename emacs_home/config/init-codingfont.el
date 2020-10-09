@@ -26,7 +26,7 @@
 
         (progn
           ;; (message "I am windows_system")
-          (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "10")
+          (zp-set-fonts "等距更纱黑体 SC" "Source Code Pro" "DejaVu Sans Mono" "11")
           )
 
       (progn
