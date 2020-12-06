@@ -35,10 +35,10 @@
 
 
 
-  ;; (add-hook 'web-mode-hook
-  ;;           (lambda ()
-  ;;             (tide-setup)
-  ;;             ))
+  (add-hook 'web-mode-hook
+            (lambda ()
+              (tide-setup)
+              ))
 
   ;; (add-hook 'web-mode-hook
   ;;         (lambda ()
@@ -133,7 +133,7 @@
 
 (use-package tide
   :ensure t
-  :after (web-mode typescript-mode company flycheck)
+  :after (typescript-mode company flycheck)
   :hook ((typescript-mode . tide-setup)
          (typescript-mode . tide-hl-identifier-mode)
 
